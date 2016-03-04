@@ -1,0 +1,31 @@
+#container {
+	width: 1600px;
+	height: 900px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: #000000; //BLACK
+}
+
+.row {
+	width: auto;
+	height: 55px;
+	background-color: #313131;
+}
+
+.column {
+	width: 100px;
+	height: 55px;
+	margin: 0px;
+
+	outline: 1px solid;
+	display: inline-block;
+	float: left;
+	background-color: #ffffff;
+
+}
+
+.column:hover {
+	background-color: #000;
+}
