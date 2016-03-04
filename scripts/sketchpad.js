@@ -18,4 +18,8 @@ $(document).ready(function() {
 	for(var i = 0; i < rows; i++) {
 		$("#container").append($row.clone());
 	}
+
+	$('.column').click(function() {
+		$(this).addClass("painted")
+	});
 });

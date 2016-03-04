@@ -26,6 +26,6 @@
 
 }
 
-.column:hover {
-	background-color: #000;
+.painted {
+	background: #123456;
 }
