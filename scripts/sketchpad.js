@@ -19,7 +19,11 @@ $(document).ready(function() {
 		$("#container").append($row.clone());
 	}
 
-	$('.column').click(function() {
-		$(this).addClass("painted")
+	$('.column').hover(
+		function() {
+			$(this).addClass("painted")
+		}, 
+		function() {
+			
 	});
 });
