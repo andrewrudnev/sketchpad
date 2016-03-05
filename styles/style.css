@@ -1,5 +1,5 @@
 #container {
-	width: 1600px;
+	width: 900px;
 	height: 900px;
 	margin-top: 25px;
 	margin-left: auto;
@@ -10,13 +10,13 @@
 
 .row {
 	width: auto;
-	height: 55px;
+	height: 30px;
 	background-color: #313131;
 }
 
 .column {
-	width: 100px;
-	height: 55px;
+	width: 30px;
+	height: 30px;
 	margin: 0px;
 
 	outline: 1px solid;
