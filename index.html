@@ -6,15 +6,20 @@
 	<meta charset="utf-8">
 	<title>Sketchpad</title>
 </head>
+
+<body>
+	<a id ="title">jQuery Sketchpad</a>
+
 	<div id="buttons">
-		<a href="#" class="color" onclick="color()">One Color</a>
-		<a href="#" class="shade" onclick="shade()">Different Shades</a>
-		<a href="#" class="randomColor" onclick="randomColor()">Random Colors</a>
+		<input type="checkbox" onclick="toggleBorders()">
+		<a id="borders">Borders (on/off)</a>
+		<a href="#" class="button" onclick="color()">Single Color (Default)</a>
+		<a href="#" class="button" onclick="shade()">Changing Shades</a>
+		<a href="#" class="button" onclick="randomColor()">Random Colors</a>
 	</div>
 
 	<div id="container">
 	</div>
-<body>
 
 <script src="scripts/jquery.js"></script>
 <script src="scripts/sketchpad.js"></script>

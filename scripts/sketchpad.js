@@ -1,6 +1,7 @@
-var rows = 30;
-var columns = 30;
+var rows = 40;
+var columns = 40;
 var boxSize;
+var borders = true;
 var $row = $('<div></div>', {
 	class: 'row'
 });
@@ -23,7 +24,6 @@ function color() {
 
 function shade() {
 	newGrid();
-	$('.column').style.opacity = "0.0";
 	darken();
 }
 
@@ -54,7 +54,7 @@ function newGrid() {
 	var size = prompt("How many squares would you like?");
 		rows = size;
 		columns = size;
-		boxSize = Math.floor(900 / size);
+		boxSize = Math.floor(800 / size);
 		destroyGrid();
 		createGrid(rows, columns);
 		$('.row').height(boxSize);
@@ -74,7 +74,8 @@ function paint() {
 function darken() {
 	$('.column').hover(
 		function() {
-			$(this).css('opacity', increaseOpacity());
+			var opacity = $(this).css('opacity');
+			$(this).css('opacity', (opacity > 0.1) ? (opacity - 0.1) : opacity);
 		}, 
 		function() {
 	});
@@ -97,7 +98,14 @@ function getRandomColor() {
 	return "#" + c() + c() + c();
 }
 
-function increaseOpacity() {
-	var newOpacity = $(this).style.opacity + .1;
-	return newOpacity;
+function toggleBorders() {
+	if(borders === true) {
+		$('.column').css('outline', 0);
+		borders = false;
+	}
+
+	else {
+		$('.column').css('outline', '1px solid');
+		borders = true;
+	}
 }

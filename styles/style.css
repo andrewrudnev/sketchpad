@@ -1,31 +1,76 @@
 #container {
-	width: 900px;
-	height: 900px;
+	width: 800px;
+	height: 800px;
 	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
-
-	background: #000000; //BLACK
 }
 
 .row {
 	width: auto;
-	height: 30px;
-	background-color: #313131;
+	height: 20px;	
 }
 
 .column {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	margin: 0px;
 
 	outline: 1px solid;
 	display: inline-block;
 	float: left;
-	background-color: #ffffff;
-
+	background-color: #123456;
 }
 
 .painted {
-	background: #123456;
+	background: #c0c0c0;
+}
+
+#buttons .button {
+	position: relative;
+	bottom: 15px;
+	font-family: arial, sans-serif;
+	margin: auto;
+	padding: 5px 10px;
+	background-color: #f0f0f0;
+	text-decoration: none;
+	color: #666;
+}
+
+#buttons #borders {
+	position: relative;
+	bottom: 10px;
+	font-family: arial, sans-serif;
+	font-size: 10px;
+	padding-right: 10px;
+}
+
+#buttons {
+	background-color: #707070;
+	position: relative;
+	padding-top: 80px;
+	margin: 0;
+	border-radius: 5px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input {
+	margin-left: 25%;
+}
+
+body {
+	background-color: #d74b4b;
+}
+
+#title {
+	position: relative;
+	left: 45%;
+	top: 0px;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	top: 35px;
+	z-index: 10;
 }
